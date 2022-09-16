@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knak</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="/assests/css/style.css">
+</head>
+<body>
+
+    <!-- header section -->
+
+    <section class="header">
+      <div class="container">
+
+        <div class="first-nav">
+            <nav class="navbar navbar-expand-lg">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item ">
+                      <a class="nav-link" href="#">Company<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact Sales</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="login" href="#">Login</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+
+        <div class="second-nav">
+         
+            <nav class="navbar navbar2">
+                <a class="navbar-brand" href="#"><img src="/assests/images/Knak-Logo.svg" alt="" srcset=""></a>      
+                <div class="hamburger" data-bs-toggle="offcanvas" data-bs-target="#canvas2" aria-controls="canvas2">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+              </div> 
+                <div class="navbar-div" id="navbarSupportedContent" >
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Solutions
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Products
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Customers
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Resources
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                  </ul>
+                  <button id="btn-tryNow">Try Now</button>
+                </div>
+               
+              </nav>
+        </div>
+       
+
+        <!-- side bar -->
+      
+<!-- 
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#canvas2" aria-controls="canvas2">
+        Button with data-bs-targetwwwww
+      </button>
+       -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="canvas2" aria-labelledby="canvas2Label">
+        <div class="offcanvas-header">
+          <a class="knak-logo" href="#"><img  src="/assests/images/knak.svg" alt="" srcset=""></a> 
+          <!-- <h5 class="offcanvas-title" id="canvas2Label">Offcanvas</h5> -->
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+          <div class="offcanvas-div" id="navbarSupportedContent" >
+            <ul class="offcanvas-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Solutions
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Products
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Customers
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Resources
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+            <button id="btn-tryNow" type="button">Try Now</button>
+          </div>
+  
+        </div>
+      </div>
+      
+
+
+
+
+      
+        <!-- helping knak section -->
+
+        <div class="row">
+        <div class="helping-knak">
+            <div class="col-lg-6">
+                <div class="description">
+                    <h1 class="knak-heading">
+                        Helping You Find Your Knak 
+                        Through Experiential Learning
+                    </h1>
+                    <p class="knak-para">
+                        Teaching Relevant Education and
+                         Life Skills For Young People and Kids
+                    </p>
+                    <button class="knak-btn">call us today</button>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="knakImg">
+                    <!-- <img class="knak-img" src="/assests/images/knak-img.png" alt="" srcset=""> -->
+                    <div class="card knak-card-1">
+                      <img class="kCardImg" src="/assests/images/certificate-courses.svg" alt="">
+                      <div class="knak-card-body">
+                        <h1 class="card-heading">Certificate
+                          Courses</h1>
+                      </div>
+                    </div>
+                    <div class="card knak-card-2">
+                      <img class="kCardImg" src="/assests/images/icon.svg" alt="">
+                      <div class="knak-card-body">
+                        <h1 class="card-heading">Career
+                          Development </h1>
+                      </div>
+                    </div>
+                   
+                </div>
+                 
+            </div>
+       </div>
+      </div>
+    </div>
+    </section>
+     
+    <!-- choose path section -->
+
+    <section class="choosePath">
+        <div class="container">
+            <div class="choosePath-desc">
+                <h1 class="choosePath-heading">Find your Knak choose your Path</h1>
+                <p class="choosePath-para">This course was selected for our collection
+                     of top-rated courses trusted by businesses worldwide.</p>
+            </div>
+        <div class="row">
+        <div class="choosePath-row">
+            <div class="col-lg-6  pic">
+                <div class="Pic-ChoosePath">
+                    <!-- <img src="/assests/images/ChoosePathPic.png" alt=""> -->
+                    <div class="card ChoosePath-card-1">
+                      <img class="ChoosePathImg" src="/assests/images/icon-courses.svg" alt="">
+                      <div class="ChoosePath-card-body">
+                        <h1 class="ChoosePath-card-heading">Certificate
+                          Courses</h1>
+                      </div>
+                    </div>
+                    <div class="card ChoosePath-card-2">
+                      <img class="ChoosePathImg" src="/assests/images/icon-development.svg" alt="">
+                      <div class="ChoosePath-card-body">
+                        <h1 class="ChoosePath-card-heading">Career
+                          Development</h1>
+                      </div>
+                    </div>
+                    <div class="card ChoosePath-card-3">
+                      <img class="ChoosePathImg" src="/assests/images/icon-tools.svg" alt="">
+                      <div class="ChoosePath-card-body">
+                        <h1 class="ChoosePath-card-heading">Creative
+                          Tools</h1>
+                      </div>
+                    </div>
+                    
+                   
+                </div>
+            </div>
+            <div class="col-lg-6">
+               <div class="choosePath-row-desc">
+                    <p class="choosePath-row-p">Empowering students for Future career choices in the most
+                    innovative courses taught by some of the industries most 
+                    recognizable experts. </p>
+                    <ul class="choosePath-row-list">
+                        <li class="list-item">Certificate Courses</li>
+                        <li class="list-item">Creative Tools</li>
+                        <li class="list-item">Career Development </li>
+                    </ul>
+               </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- LearningSystem  -->
+
+    <section class="LearningSystem">
+        <div class="container">
+          <div class="row">
+         <div class="LearningSystem-row">
+            <div class="col-lg-6 col-xs-12">
+              <div class="LearningSystem-desc">
+                <p class="LearningSystem-p">
+                    Our EdTech team provides 360 (degree) coverage for all you 
+                    educational needs.</p>
+                <ul class="LearningSystem-list">
+                        <li class="LearningSystem-listItem">Courses</li>
+                        <li class="LearningSystem-listItem">Learning Management system</li>
+                        <li class="LearningSystem-listItem">Curriculum Development</li>
+                    </ul>
+              </div>
+             </div>
+              <div class="col-lg-6 col-xs-12">
+                <div class="Pic-LearningSystem">
+                    <!-- <img src="/assests/images/LearningSystem.png" alt="" srcset=""> -->
+                    <div class="card LearningSystem-card-1">
+                      <img class="LearningSystemImg" src="/assests/images/icon-courses.svg" alt="">
+                      <div class="LearningSystem-card-body">
+                        <h1 class="LearningSystem-card-heading">
+                          Courses</h1>
+                      </div>
+                    </div>
+                    <div class="card LearningSystem-card-2">
+                      <img class="LearningSystemImg" src="/assests/images/icon-courses.svg" alt="">
+                      <div class="LearningSystem-card-body">
+                        <h1 class="LearningSystem-card-heading">Curriculum
+                          </h1>
+                      </div>
+                    </div>
+                    <div class="card LearningSystem-card-3">
+                      <img class="LearningSystemImg" src="/assests/images/icon-courses.svg" alt="">
+                      <div class="LearningSystem-card-body">
+                        <h1 class="LearningSystem-card-heading">Learning
+                          Management
+                          system</h1>
+                      </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+         </div>
+       </div>
+    </section>
+
+    <!-- LMS KEY -->
+
+    <section class="LMS-key">
+        <div class="container">
+          <div class="LMS-Data">
+            <div class="LMS-desc" >
+                <h1 class="LMS-desc-h1">The LMS is the KEY</h1>
+                <p class="LMS-desc-p">The LMS is the KEY to your GATE to unlock your Vision</p>
+            </div>
+            <div class="card LMS-card">
+                <img class="LMS-img" src="/assests/images/key.svg" alt="">
+                <div class="card-body">
+                    <h1>Key</h1>
+                    <a href="">learn more</a>
+                </div>
+            </div>
+            <div class="card LMS-card">
+                <img class="LMS-img" src="/assests/images/key.svg" alt="">
+                <div class="card-body">
+                    <h1>Key</h1>
+                    <a href="">learn more</a>
+                </div>
+            </div>
+            <div class="card LMS-card">
+                <img class="LMS-img" src="/assests/images/key.svg" alt="">
+                <div class="card-body">
+                    <h1>Key</h1>
+                    <a href="">learn more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        </section>
+
+        <div class=" hatching-footer">
+          <img style="width: 100%" src="/assests/images/hatching-footer-bg.png" alt="">
+        </div>
+
+        <!-- footer section -->
+        <section class="footer-section">
+          <div class="container">
+           
+            <div class="row footer-row">
+              <div class="col-lg-3 col-md-6 col-xs-12 logo-footer">
+                <div class="kank-footer">
+                  <img class="footer-icon" src="/assests/images/knak.svg" alt="" srcset="">
+                  <p class="knakF-p">Top companies choose Kluk Business to build 
+                    in-demand career skills.</p>
+                    <div class="social-icons">
+                      <img class="icon" src="/assests/images/facebook.svg" alt="">
+                      <img class="icon" src="/assests/images/twitter.svg" alt="" srcset="">
+                      <img class="icon" src="/assests/images/Telegram.svg" alt="">
+                      <img class="icon" src="/assests/images/Reddit.svg" alt="">
+                      <img class="icon" src="/assests/images/youtube.svg" alt="">
+                      <img class="icon" src="/assests/images/Linkedin.svg" alt="">
+                    </div>
+                    <div class="copyright-section">
+                      <p class="copyright-p"><span class="copyright-date">2021 </span>@ copyrights, all right reserved.</p>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-xs-12">
+                <div class="Explore">
+                  <h1 class="explore-heading">Explore</h1>
+                  <ul class="explore-list">
+                    <li class="explore-item">
+                      Knak Business
+                    </li>
+                    <li class="explore-item">
+                      Teach on Knak
+                    </li>
+                    <li class="explore-item">
+                      Get the app
+                    </li>
+                    <li class="explore-item">
+                      About us
+                    </li>
+                    <li class="explore-item"> 
+                      Contact us
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-xs-12">
+                <div class="about-footer">
+                  <h1 class="about-heading">About</h1>
+                  <ul class="about-list">
+                    <li class="about-item">
+                      FAQs
+                    </li>
+                    <li  class="about-item">
+                      Support
+                    </li>
+                    <li  class="about-item">
+                      Blog
+                    </li>
+                    <li  class="about-item">
+                      Docs
+                    </li>
+                    <li  class="about-item">
+                      Newsletter
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-xs-12">
+                <div class="Download-app">
+                  <h1 class="Download-app-heading">Download App</h1>
+                  <ul class="download-list">
+                    <li class="download-item">
+                      <div class="download-content">
+                        <img class="icon googlePlay-icon" src="assests/images/google-play 1.svg" alt="">
+                        <div class="descrition">
+                          <span class="desc-1">Get IT ON</span>
+                          <span  class="desc-2">Play Store</span>
+                        </div>
+                     </div>
+                    </li>
+                    <li class="download-item">
+                      <div class="download-content">
+                        <img class="icon apple-icon" src="assests/images/apple 1.svg" alt="">
+                        <div class="descrition">
+                          <span  class="desc-1">Download on the</span>
+                          <span  class="desc-2">App Store</span>
+                        </div>
+                     </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2cdb92e7e1.js" crossorigin="anonymous"></script>
+    
+    <script>
+      $(document).ready(function(){
+        hamburger = document.querySelector(".hamburger");
+        navBar = document.querySelector(".sidebar");
+        // hamburger.onclick = function(){
+        //   navBar = document.querySelector(".navbar2");
+        //   navBar.classList.toggle("active");
+        // }
+
+        function onClickHamburger() {
+          hamburger.classList.toggle("icon");
+          navBar.classList.toggle("active");
+
+        }
+      });
+    </script>
+
+
+
+
+</body>
+</html>
